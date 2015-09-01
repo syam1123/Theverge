@@ -1,0 +1,216 @@
+$list_hover : #fa4b2a;
+$menu_border : #fa4b2a;
+
+body{
+    font-size: 17px;
+}
+#mob_topbar{
+    background-color: #fa4b2a;
+    width: 200%;
+    margin-right: -10;
+    margin-top: -10px;
+    margin-left: -10px;
+    height: 60px;
+    img{
+        padding-top: 15px;
+    }
+}
+@media (min-width: 320px) and (max-width: 599px) {
+    #mob_topbar{
+        img{
+            width: 136px;
+            height: auto;
+            padding-top: 20px;
+        }
+    }
+}
+@media (min-width: 600px) {
+    #mob_topbar{
+        img{
+            width: 175px;
+            height: auto;
+        }
+    }
+}
+@media (max-width: 319px) {
+    #mob_topbar{
+        img{
+            width: 107px;
+            height: auto;
+            padding-top: 21px;
+        }
+    }
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5ewrjPiaoEww8AihgqWRJAo.woff) format('woff');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 36px;
+  // line-height: 1;
+  letter-spacing: normal;
+  padding-bottom: 3px;
+  padding-top: 10px;
+  text-transform: none;
+  display: inline-block;
+  word-wrap: normal;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+.menu{
+    color: white;
+    top: -10px;
+    float: left;
+    padding: 5px 10px 0px 10px;
+    z-index: 5;
+    cursor: pointer;
+}
+.notification{
+    // background: #fa4b2a;
+    font-family: ff-din-web-condensed,Helvetica,sans-serif;
+    text-transform: uppercase;
+    background-color: #FA4B2A;
+    border-left: 1px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    display: block;
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 5px 0px;
+    z-index: 0;
+    border-left: 1px solid white;
+    float: right;
+    text-align: center;
+    color: white;
+    line-height: .5;
+    cursor: pointer;
+}
+strong{
+    font-family: ff-din-web-condensed,;
+    font-size: 2em;
+    line-height: 1.15;
+    display: block;
+}
+em{
+    font-size: .5em;
+    font-style: normal;
+    font-weight: 600;
+}
+.home, .long, .review, .video, .us{
+    border-left: 4px solid $menu_border;
+}
+.tech, .cars{
+    border-left: 4px solid rgba(74, 233, 27, 0.75);
+}
+.science, .forums{
+    border-left: 4px solid rgb(137, 27, 189);
+}
+.video, .search{
+    border-left: 4px solid rgb(52, 124, 152);
+}
+.enter, .design{
+    border-left: 4px solid rgb(255, 25, 3);
+}
+@media (min-width:1024px){
+    .visible_sm{
+        display: none !important;
+    }
+}
+#back{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    // z-index: 4;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.side_menu{
+    width: 250px;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    float: left;
+    z-index: 3;
+    position: absolute;
+    overflow: scroll;
+    height: 100%;
+    left: -250px;
+    transition-property: transform, left, right;
+    transition-delay: 0s, 0s, 0s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 150ms;
+    // overflow: hidden;
+    li{
+        list-style: none;
+        background-color: #222;
+        border-top: 1px solid #2F2F2F;
+        margin-left: -40px;
+        padding-left: 10px;
+        height: 48px;
+        color: white;
+        line-height: 1;
+        cursor: pointer;
+        font-family: 'Pathway Gothic One', sans-serif;
+        text-transform: uppercase;
+        list-style-type: none;
+        font-size: 20px;
+        &:hover{
+            color: $list_hover;
+        }
+        img{
+            display: inline-block;
+            width: 21px;
+            max-height: 18px;
+            padding-top: 15px;
+            padding-right: 10px;
+        }
+
+    }
+    ul{
+        z-index: 5;
+        // width: 250px;
+        position: relative;
+        overflow: scroll;
+        margin-top: 0px;
+        border-right: 2px solid $menu_border;
+        .long{
+            img{
+                padding-top: 25px;
+                }
+            }
+        .user{
+            background-color: #000;
+            // line-height: 3;
+            height: 60px;
+            .login{
+                display: inline-block;
+                float: right;
+                width: 180px;
+                line-height: 3;
+            }
+            .img{
+                width: 50px;
+                height: 50px;
+                img{
+                    width: 36px;
+                    min-height: 36px;
+                    padding-top: 10px;
+                }
+                // padding: 20px;
+                display: inline-block;
+            }
+        }
+    }
+
+}
