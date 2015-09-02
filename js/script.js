@@ -1,7 +1,7 @@
 function show_menu() {
     var menu = document.getElementById("hidden_menu");
     var back = document.getElementById("back");
-    if(menu.style.left >= "-250px"){
+    if(menu.style.left <= "0"){
         menu.style.left = "0";
         back.style.display = "block";
     }
@@ -23,7 +23,7 @@ function hide() {
 function show_notification(){
     var notif = document.getElementById("hidden_notif");
     var back = document.getElementById("back");
-    if(notif.style.right >= "-250px"){
+    if(notif.style.right <= "0"){
         notif.style.right = "0";
         back.style.display = "block";
     }
