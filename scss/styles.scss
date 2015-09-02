@@ -1,6 +1,7 @@
 $list_hover : #fa4b2a;
 $menu_border : #fa4b2a;
-
+$date_color : #FA4B2A;
+$inactive : rgb(75, 67, 62);
 body{
     font-size: 17px;
 }
@@ -136,6 +137,12 @@ em{
     height: 100%;
     display: none;
 }
+#hidden_menu{
+    left: -250px;
+}
+#back{
+    display: none;
+}
 .side_menu{
     width: 250px;
     background-color: rgba(0,0,0,.5);
@@ -180,8 +187,6 @@ em{
     ul{
         z-index: 5;
         // width: 250px;
-        position: relative;
-        overflow: scroll;
         margin-top: 0px;
         border-right: 2px solid $menu_border;
         .long{
@@ -196,7 +201,8 @@ em{
             .login{
                 display: inline-block;
                 float: right;
-                width: 180px;
+                min-width: 170px;
+                max-width: 180px;
                 line-height: 3;
             }
             .img{
@@ -213,4 +219,79 @@ em{
         }
     }
 
+}
+.notifsm{
+    width: 250px;
+    background-color: white;
+    top: 0;
+    float: right;
+    z-index: 3;
+    position: absolute;
+    overflow: scroll;
+    height: 100%;
+    right: -250px;
+    transition-property: transform, left, right;
+    transition-delay: 0s, 0s, 0s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 150ms;
+    bottom: 0;
+    ul{
+        z-index: 5;
+        margin-top: 0px;
+        border-left: 2px solid $menu_border;
+        li{
+            list-style: none;
+            padding: 10px;
+            margin-left: -30px;
+            font-size: .8rem;
+            .date{
+                display: block;
+                width: 100px;
+                color: white;
+                font-family: 'Pathway Gothic One', sans-serif;
+                text-align: center;
+                font-size: .8rem;
+                text-transform: uppercase;
+                padding: 2px 0px;
+                border-radius: 2px;
+                background-color:$date_color;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+                &:hover{
+                    color: $date_color;
+
+                }
+            }
+        }
+        .inactive{
+            font-size: .6rem;
+        }
+    }
+}
+.inactive{
+    color: $inactive;
+}
+.contents{
+    margin-left: -25%;
+    margin-right: -25%;
+    position: relative;
+    background-color: rgba(54, 10, 162, 0.9);
+
+}
+.post1, .post2, .post3{
+    height: 200px;
+    width: 100%;
+    opacity: .3;
+
+}
+.post1{
+    background-image: url(../img/heart.gif);
+}
+.post2{
+    background-image: url(../img/watch.jpg);
+}
+.post3{
+    background-image: url(../img/music.jpg);
 }

@@ -114,6 +114,12 @@ em {
   height: 100%;
   display: none; }
 
+#hidden_menu {
+  left: -250px; }
+
+#back {
+  display: none; }
+
 .side_menu {
   width: 250px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -152,8 +158,6 @@ em {
       padding-right: 10px; }
   .side_menu ul {
     z-index: 5;
-    position: relative;
-    overflow: scroll;
     margin-top: 0px;
     border-right: 2px solid #fa4b2a; }
     .side_menu ul .long img {
@@ -164,7 +168,8 @@ em {
       .side_menu ul .user .login {
         display: inline-block;
         float: right;
-        width: 180px;
+        min-width: 170px;
+        max-width: 180px;
         line-height: 3; }
       .side_menu ul .user .img {
         width: 50px;
@@ -174,5 +179,71 @@ em {
           width: 36px;
           min-height: 36px;
           padding-top: 10px; }
+
+.notifsm {
+  width: 250px;
+  background-color: white;
+  top: 0;
+  float: right;
+  z-index: 3;
+  position: absolute;
+  overflow: scroll;
+  height: 100%;
+  right: -250px;
+  transition-property: transform, left, right;
+  transition-delay: 0s, 0s, 0s;
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
+  bottom: 0; }
+  .notifsm ul {
+    z-index: 5;
+    margin-top: 0px;
+    border-left: 2px solid #fa4b2a; }
+    .notifsm ul li {
+      list-style: none;
+      padding: 10px;
+      margin-left: -30px;
+      font-size: .8rem; }
+      .notifsm ul li .date {
+        display: block;
+        width: 100px;
+        color: white;
+        font-family: 'Pathway Gothic One', sans-serif;
+        text-align: center;
+        font-size: .8rem;
+        text-transform: uppercase;
+        padding: 2px 0px;
+        border-radius: 2px;
+        background-color: #FA4B2A; }
+      .notifsm ul li a {
+        color: black;
+        text-decoration: none; }
+        .notifsm ul li a:hover {
+          color: #FA4B2A; }
+    .notifsm ul .inactive {
+      font-size: .6rem; }
+
+.inactive {
+  color: #4b433e; }
+
+.contents {
+  margin-left: -25%;
+  margin-right: -25%;
+  position: relative;
+  background-color: rgba(54, 10, 162, 0.9); }
+
+.post1, .post2, .post3 {
+  height: 200px;
+  width: 100%;
+  opacity: .3; }
+
+.post1 {
+  background-image: url(../img/heart.gif); }
+
+.post2 {
+  background-image: url(../img/watch.jpg); }
+
+.post3 {
+  background-image: url(../img/music.jpg); }
 
 /*# sourceMappingURL=styles.css.map */
