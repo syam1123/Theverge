@@ -1,5 +1,6 @@
 body {
-  font-size: 17px; }
+  font-size: 17px;
+  overflow-x: hidden; }
 
 #mob_topbar {
   background-color: #fa4b2a;
@@ -415,6 +416,40 @@ h2 {
     z-index: 2;
     opacity: .8; }
 
+.subv:after {
+  display: block;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-left-color: white;
+  border-width: 10px 0 10px 13.33333px;
+  -moz-transform: scale(0.9999);
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -2px;
+  z-index: 2;
+  opacity: .8; }
+.subv:before {
+  transition: ease all .5s;
+  border-radius: 40px;
+  border: 2px solid;
+  background: rgba(0, 0, 0, 0.5);
+  content: '';
+  position: absolute;
+  display: block;
+  color: white;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  opacity: .5; }
+
 html {
   font-family: sans-serif;
   line-height: 1.4; }
@@ -449,7 +484,8 @@ html {
   color: #222 !important; }
 
 .video1 {
-  background-color: black; }
+  background-color: black;
+  padding-bottom: 2px; }
   .video1 .videopost {
     min-height: 250px; }
   .video1 .vlogo {
@@ -463,7 +499,8 @@ html {
     width: 100%;
     padding-top: 5px;
     font-size: .8rem;
-    font-family: "Pathway Gothic One",sans-serif; }
+    font-family: "Pathway Gothic One",sans-serif;
+    text-transform: uppercase; }
     .video1 .heading a {
       color: #fa4b2a;
       text-decoration: none; }
@@ -478,7 +515,7 @@ html {
 .subvideo li {
   display: flex;
   list-style: none;
-  margin-left: -27px;
+  margin-left: -40px;
   margin-top: -17px;
   border-bottom: 1px solid black;
   background-color: #373837; }
@@ -488,15 +525,123 @@ html {
     .subvideo li:hover h4 {
       color: #fa4b2a;
       cursor: pointer; }
-  .subvideo li img {
-    height: 82px;
+  .subvideo li .subv {
+    background-size: 125px 82px;
+    display: inline-flex;
     width: 125px;
-    display: inline-flex; }
+    height: 82px;
+    position: relative; }
   .subvideo li h4 {
     color: white;
     font-size: .7rem;
     text-align: center;
     padding: 15px;
     font-family: Adelle,Georgia,serif; }
+
+.sub1 {
+  background-image: url(../img/moto_360.jpg); }
+
+.sub2 {
+  background-image: url(../img/xperia.jpg); }
+
+.sub3 {
+  background-image: url(../img/avengers.jpg); }
+
+#vidbottom {
+  text-align: center;
+  top: 0;
+  font-weight: 200; }
+  #vidbottom h2:hover {
+    color: #fa4b2a;
+    text-decoration: underline;
+    cursor: pointer; }
+
+.news ul {
+  background-color: white; }
+.news li {
+  display: flex;
+  list-style: none;
+  margin-left: -40px;
+  font-size: .2rem;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ccc; }
+  .news li img {
+    width: 82px;
+    height: 82px; }
+  .news li .h2 {
+    display: inline-block;
+    font-family: Adelle,Georgia,serif;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #444;
+    padding-left: 20px; }
+    .news li .h2 .auther {
+      color: #333;
+      font-style: bold; }
+  .news li h3 {
+    display: inline-block;
+    font-family: Adelle,Georgia,serif;
+    font-weight: 600;
+    font-size: .7rem; }
+  .news li span {
+    font-size: .7rem; }
+.news #newsbottom {
+  background-color: #f7f1ee;
+  font-size: 2rem;
+  display: block;
+  color: #fa4b2a;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: "Pathway Gothic One",sans-serif; }
+  .news #newsbottom h4 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px; }
+    .news #newsbottom h4:hover {
+      text-decoration: underline;
+      cursor: pointer; }
+
+.backtotop {
+  background: rgba(0, 0, 0, 0.6);
+  height: 30px;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: -17px;
+  margin-right: -10px;
+  margin-left: -10px;
+  padding-bottom: 10px; }
+  .backtotop a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    line-height: 1.4; }
+
+footer {
+  background-color: black;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 20px 25px;
+  font-family: Adelle,Georgia,serif;
+  font-size: .9rem;
+  line-height: 1.7;
+  font-weight: 600; }
+  footer input {
+    border-radius: 0px;
+    border: none;
+    height: 55px;
+    width: 100%;
+    color: black;
+    font-size: 1.1rem; }
+  footer ul {
+    color: white;
+    margin-left: -15px; }
+    footer ul li {
+      padding: 3px;
+      list-style: none;
+      margin-left: -20px;
+      color: #999;
+      cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */
