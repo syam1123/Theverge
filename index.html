@@ -17,12 +17,120 @@
                 </em>
             </div>
             <div class="menu" role="button" onclick="show_menu()">
-                <i class="material-icons menu" >menu</i>
+                <!-- <i class="material-icons menu" >menu</i> -->
+                <img src="img/menu_button.png" alt="" />
             </div>
             <div class="logo">
                 <img src="img/logo.png" alt="" />
             </div>
+
+            <div id="trending_now_dropdown">
+                  <div id="dropdown_content">
+                        TRENDING NOW
+                        <a href="#">
+                              <br/>VMA 2015: Nicky Minja called out Milley Cyrus live on the VMA stage
+                        </a>
+                  </div>
+                  <div id="down_button">
+                        <img src="img/down_arrw.png" alt="" />
+                  </div>
+            </div>
         </header>
+        <div class="extra_div">
+            <div class="first">
+                  <div class="logo">
+                        <img src="img/heading.png" alt="" />
+                  </div>
+                  <img id="nicky" src="img/google.jpg" alt=""/>
+                  <div class="trending_now_dropdown">
+                        <div class="dropdown_content">
+                            TRENDING NOW
+                            <a href="#">
+                                <br/>Google has a new logo
+                            </a>
+                        </div>
+                    <span>
+                          <img src="img/down_arrw.png" alt="" />
+                    </span>
+                  </div>
+                  <div id="new_articles"><a href="#"><strong>9</strong>
+                  <em>
+                      New articles
+                  </em> </a></div>
+                  <div class="connects">
+                    <ul>
+                      <li>
+                        <img src="img/fby.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="img/twittery.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="img/youtubey.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="img/subscribey.png" alt="" />
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+            <nav class="menu_2nd">
+              <ul>
+                <li id="login">
+                  <img src="img/user.gif" alt="" />
+                  <span>LOGIN | SIGN UP</span>
+                </li>
+                <li>
+                  <span>HOME</span>
+                  <img src="img/down_arrw_white.png" alt="" />
+                </li>
+                <li>
+                  <span>LONGFORM</span>
+                  <img src="img/down_arrw_white.png" alt="" />
+                </li>
+                <li>
+                  <span>REVIEWS</span>
+                  <img src="img/down_arrw_white.png" alt="" />
+                </li>
+                <li>
+                  <span>VIDEO</span>
+                  <img src="img/down_arrw_white.png" alt="" />
+                </li>
+                <li>
+                  <span>TECH</span>
+                  <img src="img/down_arrw_white.png" alt="" />
+                </li>
+                <li>
+                  <span>SCIENCE</span>
+                  <img src="img/down_arrw_white.png" alt="" />
+                </li>
+                <li>
+                  <span>ENTERTAINMENT</span>
+                  <img src="img/down_arrw_white.png" alt="" />
+                </li>
+                <li>
+                  <span>CARS</span>
+                  <img src="img/down_arrw_white.png" alt="" />
+                </li>
+                <li>
+                  <span>DESIGN</span>
+                  <img src="img/down_arrw_white.png" alt="" />
+                </li>
+                <li>
+                  <span>US WORLD</span>
+                  <img src="img/down_arrw_white.png" alt="" />
+                </li>
+                <li>
+                  <span>FORUMS</span>
+                  <img src="img/down_arrw_white.png" alt="" />
+                </li>
+                <li>
+                  <img src="img/search.png" alt="" />
+                </li>
+              </ul>
+            </nav>
+          </div>
+
         <div class="visible_sm" id="back" onclick="hide()">
 
         </div>
@@ -78,7 +186,7 @@
         </section>
         <section class="contents" >
             <div class="photos">
-                <div class="post11">
+                <div class="post11" id="post11">
                     <div class="cntnt" id="cntnt1">
 
                     </div>
@@ -88,6 +196,8 @@
                       <span class="p-comment-count taggreen">12</span>
                     </p>
                 </div>
+                <div class="post12">
+
                 <div class="post11">
                     <div class="cntnt" id="cntnt2">
 
@@ -107,6 +217,7 @@
                       <span class="p-comment-count taggreen">34</span>
                     </p>
                 </div>
+            </div>
             </div>
             <div class="row">
                 <div class="post11 post">
@@ -145,35 +256,44 @@
                 <div class="heading">
                     <h2 >MOTO X'S PROMISE <a href="#">WATCH NOW</a></h2>
                 </div></div>
-                <div class="post11 videopost">
-                    <div class="cntnt" id="video">
-                        <a href="#"></a>
-                    </div>
-                </div>
-                <div class="subvideo">
-                    <ul>
-                        <li><div class="subv sub3"></div>
-                            <h4>The new moto 360 watches for 2015</h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="subvideo">
-                    <ul>
-                        <li><div class="subv sub2"></div>
-                            <h4>The new moto 360 watches for 2015</h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="subvideo">
-                    <ul>
-                        <li><div class="subv sub1">
-                            <div class="subvid">
-
-                            </div>
+                <div class="vid">
+                    <div class="post11 videopost">
+                        <div class="cntnt" id="video">
+                            <a href="#"></a>
                         </div>
-                            <h4>The new moto 360 watches for 2015</h4>
-                        </li>
-                    </ul>
+                    </div>
+                    <div class="vidsub">
+                        <div class="subvideo">
+                            <ul>
+                                <li><div class="subv sub3"></div>
+                                    <h4>The new moto 360 watches for 2015</h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subvideo">
+                            <ul>
+                                <li><div class="subv sub2"></div>
+                                    <h4>The new moto 360 watches for 2015</h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subvideo">
+                            <ul>
+                                <li><div class="subv sub1">
+                                </div>
+                                    <h4>The new moto 360 watches for 2015</h4>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="subvideo">
+                            <ul>
+                                <li><div class="subv sub2"></div>
+                                    <h4>The new moto 360 watches for 2015</h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="heading" id="vidbottom">
                     <h2 >see more <a href="#">VIDEOS</a></h2>
@@ -184,21 +304,33 @@
                     <li><img src="img/star.jpg" alt="" />
                         <div class="h2">This is how the Boba Fett Star Wars spin-off movie should look<br>
                             <h3>Emily Yoshida</h3> | <span>09.03.2015</span>
+                            <p class="hiddennews">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit cursus nisl, et pellentesque neque ultrices vel. Sed eu rutrum lacus. Morbi mollis quis metus ac interdum. Vivamus eget egestas eros. Quisque hendrerit lorem et urna egestas imperdiet. Suspendisse sed quam sagittis, eleifend dolor nec, scelerisque orci. Pellentesque finibus dapibus odio, rhoncus ultrices libero placerat nec. Proin mauris orci, pretium interdum est eget, placerat malesuada lorem. Proin magna purus, mattis sit amet luctus at, sodales vitae augue. Nullam tempor sapien porta finibus sodales.
+                            </p>
                         </div>
                     </li>
                     <li><img src="img/huwa.jpg" alt="" />
                         <div class="h2">This is how the Boba Fett Star Wars spin-off movie should look<br>
                             <h3>Emily Yoshida</h3> | <span>09.03.2015</span>
+                            <p class="hiddennews">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit cursus nisl, et pellentesque neque ultrices vel. Sed eu rutrum lacus. Morbi mollis quis metus ac interdum. Vivamus eget egestas eros. Quisque hendrerit lorem et urna egestas imperdiet. Suspendisse sed quam sagittis, eleifend dolor nec, scelerisque orci. Pellentesque finibus dapibus odio, rhoncus ultrices libero placerat nec. Proin mauris orci, pretium interdum est eget, placerat malesuada lorem. Proin magna purus, mattis sit amet luctus at, sodales vitae augue. Nullam tempor sapien porta finibus sodales.
+                            </p>
                         </div>
                     </li>
                     <li><img src="img/star.jpg" alt="" />
                         <div class="h2">This is how the Boba Fett Star Wars spin-off movie should look<br>
                             <h3>Emily Yoshida</h3> | <span>09.03.2015</span>
+                            <p class="hiddennews">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit cursus nisl, et pellentesque neque ultrices vel. Sed eu rutrum lacus. Morbi mollis quis metus ac interdum. Vivamus eget egestas eros. Quisque hendrerit lorem et urna egestas imperdiet. Suspendisse sed quam sagittis, eleifend dolor nec, scelerisque orci. Pellentesque finibus dapibus odio, rhoncus ultrices libero placerat nec. Proin mauris orci, pretium interdum est eget, placerat malesuada lorem. Proin magna purus, mattis sit amet luctus at, sodales vitae augue. Nullam tempor sapien porta finibus sodales.
+                            </p>
                         </div>
                     </li>
                     <li><img src="img/huwa.jpg" alt="" />
                         <div class="h2">This is how the Boba Fett Star Wars spin-off movie should look<br>
                             <h3>Emily Yoshida</h3> | <span>09.03.2015</span>
+                            <p class="hiddennews">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit cursus nisl, et pellentesque neque ultrices vel. Sed eu rutrum lacus. Morbi mollis quis metus ac interdum. Vivamus eget egestas eros. Quisque hendrerit lorem et urna egestas imperdiet. Suspendisse sed quam sagittis, eleifend dolor nec, scelerisque orci. Pellentesque finibus dapibus odio, rhoncus ultrices libero placerat nec. Proin mauris orci, pretium interdum est eget, placerat malesuada lorem. Proin magna purus, mattis sit amet luctus at, sodales vitae augue. Nullam tempor sapien porta finibus sodales.
+                            </p>
                         </div>
                     </li>
                 </ul>
@@ -239,21 +371,33 @@
                     <li><img src="img/star.jpg" alt="" />
                         <div class="h2">This is how the Boba Fett Star Wars spin-off movie should look<br>
                             <h3>Emily Yoshida</h3> | <span>09.03.2015</span>
+                            <p class="hiddennews">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit cursus nisl, et pellentesque neque ultrices vel. Sed eu rutrum lacus. Morbi mollis quis metus ac interdum. Vivamus eget egestas eros. Quisque hendrerit lorem et urna egestas imperdiet. Suspendisse sed quam sagittis, eleifend dolor nec, scelerisque orci. Pellentesque finibus dapibus odio, rhoncus ultrices libero placerat nec. Proin mauris orci, pretium interdum est eget, placerat malesuada lorem. Proin magna purus, mattis sit amet luctus at, sodales vitae augue. Nullam tempor sapien porta finibus sodales.
+                            </p>
                         </div>
                     </li>
                     <li><img src="img/huwa.jpg" alt="" />
                         <div class="h2">This is how the Boba Fett Star Wars spin-off movie should look<br>
                             <h3>Emily Yoshida</h3> | <span>09.03.2015</span>
+                            <p class="hiddennews">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit cursus nisl, et pellentesque neque ultrices vel. Sed eu rutrum lacus. Morbi mollis quis metus ac interdum. Vivamus eget egestas eros. Quisque hendrerit lorem et urna egestas imperdiet. Suspendisse sed quam sagittis, eleifend dolor nec, scelerisque orci. Pellentesque finibus dapibus odio, rhoncus ultrices libero placerat nec. Proin mauris orci, pretium interdum est eget, placerat malesuada lorem. Proin magna purus, mattis sit amet luctus at, sodales vitae augue. Nullam tempor sapien porta finibus sodales.
+                            </p>
                         </div>
                     </li>
                     <li><img src="img/star.jpg" alt="" />
                         <div class="h2">This is how the Boba Fett Star Wars spin-off movie should look<br>
                             <h3>Emily Yoshida</h3> | <span>09.03.2015</span>
+                            <p class="hiddennews">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit cursus nisl, et pellentesque neque ultrices vel. Sed eu rutrum lacus. Morbi mollis quis metus ac interdum. Vivamus eget egestas eros. Quisque hendrerit lorem et urna egestas imperdiet. Suspendisse sed quam sagittis, eleifend dolor nec, scelerisque orci. Pellentesque finibus dapibus odio, rhoncus ultrices libero placerat nec. Proin mauris orci, pretium interdum est eget, placerat malesuada lorem. Proin magna purus, mattis sit amet luctus at, sodales vitae augue. Nullam tempor sapien porta finibus sodales.
+                            </p>
                         </div>
                     </li>
                     <li><img src="img/huwa.jpg" alt="" />
                         <div class="h2">This is how the Boba Fett Star Wars spin-off movie should look<br>
                             <h3>Emily Yoshida</h3> | <span>09.03.2015</span>
+                            <p class="hiddennews">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit cursus nisl, et pellentesque neque ultrices vel. Sed eu rutrum lacus. Morbi mollis quis metus ac interdum. Vivamus eget egestas eros. Quisque hendrerit lorem et urna egestas imperdiet. Suspendisse sed quam sagittis, eleifend dolor nec, scelerisque orci. Pellentesque finibus dapibus odio, rhoncus ultrices libero placerat nec. Proin mauris orci, pretium interdum est eget, placerat malesuada lorem. Proin magna purus, mattis sit amet luctus at, sodales vitae augue. Nullam tempor sapien porta finibus sodales.
+                            </p>
                         </div>
                     </li>
                 </ul>
@@ -294,33 +438,71 @@
                     <li><img src="img/star.jpg" alt="" />
                         <div class="h2">This is how the Boba Fett Star Wars spin-off movie should look<br>
                             <h3>Emily Yoshida</h3> | <span>09.03.2015</span>
+                            <p class="hiddennews">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit cursus nisl, et pellentesque neque ultrices vel. Sed eu rutrum lacus. Morbi mollis quis metus ac interdum. Vivamus eget egestas eros. Quisque hendrerit lorem et urna egestas imperdiet. Suspendisse sed quam sagittis, eleifend dolor nec, scelerisque orci. Pellentesque finibus dapibus odio, rhoncus ultrices libero placerat nec. Proin mauris orci, pretium interdum est eget, placerat malesuada lorem. Proin magna purus, mattis sit amet luctus at, sodales vitae augue. Nullam tempor sapien porta finibus sodales
+                            </p>
                         </div>
                     </li>
                     <li><img src="img/huwa.jpg" alt="" />
                         <div class="h2">This is how the Boba Fett Star Wars spin-off movie should look<br>
                             <h3>Emily Yoshida</h3> | <span>09.03.2015</span>
+                            <p class="hiddennews">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit cursus nisl, et pellentesque neque ultrices vel. Sed eu rutrum lacus. Morbi mollis quis metus ac interdum. Vivamus eget egestas eros. Quisque hendrerit lorem et urna egestas imperdiet. Suspendisse sed quam sagittis, eleifend dolor nec, scelerisque orci. Pellentesque finibus dapibus odio, rhoncus ultrices libero placerat nec. Proin mauris orci, pretium interdum est eget, placerat malesuada lorem. Proin magna purus, mattis sit amet luctus at, sodales vitae augue. Nullam tempor sapien porta finibus sodales.
+                            </p>
                         </div>
                     </li>
                     <li><img src="img/star.jpg" alt="" />
                         <div class="h2">This is how the Boba Fett Star Wars spin-off movie should look<br>
                             <h3>Emily Yoshida</h3> | <span>09.03.2015</span>
+
                         </div>
+                        <p class="hiddennews">
+                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit cursus nisl, et pellentesque neque ultrices vel. Sed eu rutrum lacus. Morbi mollis quis metus ac interdum. Vivamus eget egestas eros. Quisque hendrerit lorem et urna egestas imperdiet. Suspendisse sed quam sagittis, eleifend dolor nec, scelerisque orci. Pellentesque finibus dapibus odio, rhoncus ultrices libero placerat nec. Proin mauris orci, pretium interdum est eget, placerat malesuada lorem. Proin magna purus, mattis sit amet luctus at, sodales vitae augue. Nullam tempor sapien porta finibus sodales.
+                        </p>
                     </li>
                     <li><img src="img/huwa.jpg" alt="" />
                         <div class="h2">This is how the Boba Fett Star Wars spin-off movie should look<br>
                             <h3>Emily Yoshida</h3> | <span>09.03.2015</span>
+
                         </div>
+                        <p class="hiddennews">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit cursus nisl, et pellentesque neque ultrices vel. Sed eu rutrum lacus. Morbi mollis quis metus ac interdum. Vivamus eget egestas eros. Quisque hendrerit lorem et urna egestas imperdiet. Suspendisse sed quam sagittis, eleifend dolor nec, scelerisque orci. Pellentesque finibus dapibus odio, rhoncus ultrices libero placerat nec. Proin mauris orci, pretium interdum est eget, placerat malesuada lorem. Proin magna purus, mattis sit amet luctus at, sodales vitae augue. Nullam tempor sapien porta finibus sodales.
+                        </p>
                     </li>
                     <li id="newsbottom"><h4>see all news</h4></li>
                 </ul>
             </div>
         </section>
         <section class="backtotop">
-            <a href="#mob_topbar">Back to top ^</a>
+            <a href="#">Back to top ^</a>
         </section>
         <footer>
         <input type="text" name="name" placeholder="Search articles & products">
-        <ul>
+        <ul class="first">
+            <li>Longform</li>
+            <li>Videos</li>
+            <li>Review</li>
+            <li>Tech</li>
+            <li>Science</li>
+            <li>Culture</li>
+            <li>Cars</li>
+            <li>Design</li>
+            <li>Business</li>
+            <li>US & World</li>
+        </ul>
+        <ul class="second">
+            <li>Longform</li>
+            <li>Videos</li>
+            <li>Review</li>
+            <li>Tech</li>
+            <li>Science</li>
+            <li>Culture</li>
+            <li>Cars</li>
+            <li>Design</li>
+            <li>Business</li>
+            <li>US & World</li>
+        </ul>
+        <ul class="third">
             <li>Longform</li>
             <li>Videos</li>
             <li>Review</li>
