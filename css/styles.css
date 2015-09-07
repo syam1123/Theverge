@@ -900,11 +900,11 @@ footer {
       color: #999;
       cursor: pointer; }
   footer .first {
-    width: 43%;
+    width: 36%;
     display: inline-block; }
   footer .second {
     display: inline-block;
-    width: 43%; }
+    width: 36%; }
   footer .third {
     display: none; }
 
